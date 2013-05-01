@@ -3,8 +3,6 @@ use warnings;
 package Plack::Middleware::LowerUrl;
 use parent qw( Plack::Middleware );
 
-our $VERSION = '0.001';
-
 sub call {
   my ($self, $env) = @_;
   if ( $env->{REQUEST_URI} ) {
