@@ -14,7 +14,7 @@ sub call {
     $env->{PATH_INFO} = lc $env->{PATH_INFO} if $env->{PATH_INFO};
   }
   my $res = $self->app->($env);
-  return $res; 
+  return $res;
 }
 
 1;
@@ -53,4 +53,3 @@ This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =cut
-
