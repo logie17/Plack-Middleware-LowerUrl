@@ -5,7 +5,7 @@ use Test::More;
 
 my $body = ['FOO'];
 my $app;
- 
+
 $app = builder {
   enable "Plack::Middleware::LowerUrl";
   sub {
